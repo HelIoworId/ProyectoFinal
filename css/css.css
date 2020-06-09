@@ -1,0 +1,244 @@
+/*Imagen de fondo de la pagina web*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.body_paginas{
+    background-image: url("../imagenes/logo/fondonegro.jpg");
+}
+/*Fondo de la cabecera*/
+.cabecera{
+    background-color: black;
+}
+/*Configuracion del menu*/
+.topnav {
+    overflow: hidden;
+    background-color: #212529;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.topnav .icon {
+display: none;
+}
+  
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+/*Configuracion del color del footer*/
+.menuFooter{
+    margin: auto;
+}
+.contenedorFooter{
+    background-color: #212529;
+}
+/*Configuracion de los botones del usuario y admin*/
+.contenedorBotones{
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 1%;
+    
+}
+/*Estilos aplicados al inicio de sesion y registro de la web*/
+.iniciar_registrar{
+    color: white;
+}
+.formPrincipal{
+    margin: auto;
+}
+.botonextra{
+    width: 49%;
+    margin-top: 2%;
+    
+}
+.fondoindex{
+    background-color: rgb(0,0,0); opacity: 0.7;
+}
+/*Configuracion del perfil*/
+#perfil{
+    background-color: #ffffff;
+}
+/*Configuracion del formulario para subir fotos*/
+.cabeceraPerfil{
+    text-align: center;
+}
+.fotos{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1%;
+}
+.divFotos{
+    margin: auto;
+    margin-top: 5%;
+}
+/*Configuracion del enlace de cerrar sesion*/
+.cerrar_sesion{
+    color: black;
+    text-decoration: none;
+}
+/*Configuracion del video de la pagina principal.php*/
+.video{
+    text-align: center;
+    margin-top: 1%;
+}
+/*Configuracion de las fotos en las distintas paginas que componen la web*/
+.galeria {
+    margin: 1rem auto;
+    width:90%;
+    column-count: 4;
+}
+/*Configuracion de tamaño de las imagenes que vamos subiendo a la pagina*/
+.imagen{
+    width: 100%;
+    margin: 0.5rem auto;
+}
+/*Configuracion de la iamgen ampliada*/
+.imagenesAmpliadas{
+    width: 200%;
+    margin-left: -50%;
+}
+@media screen and (max-width: 600px) {
+    .imagenFlotante{
+        width: 100%;
+    }
+    .imagenesAmpliadas{
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+/*Configuracion de botones de megusta, comentarios y lupa*/
+article{
+    text-align: center;
+}
+.btCorazon, .btComentario, .btLupa{
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    height: 2rem;
+}
+.btCorazon{
+    background-image:url(../imagenes/logo/corazon.png);
+}
+.btComentario{
+    background-image:url(../imagenes/logo/comentario.png);
+}
+.btLupa{
+    background-image:url(../imagenes/logo/lupa.png);
+}
+.cantidadMegusta, .cantidadComentario{
+    color: white;
+    display: inline;
+    font-size: 1rem;
+}
+/*Configuracion del boton comentarios*/
+.comentario{
+    width: 2em;
+    filter: grayscale(0%);
+}
+/*Configuracion del panel de error cuando introducimos un login erroneo o te registrar de forma incorrecta*/
+.error{
+    background-color: #E74F4F;
+    position: absolute;
+    top: 0;
+    padding: 1% 0% ;
+    border-radius:  0 0 5px 5px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+    display: none;
+}
+.correcto, .correctoSubida{
+    background-color: green;
+    position: absolute;
+    top: 0;
+    padding: 1% 0% ;
+    border-radius:  0 0 5px 5px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+    display: none;
+}
+/*Error al subir un archivo que no sea una imagen*/
+.errorSubirFoto{
+    background-color: #E74F4F;
+    position: absolute;
+    top: 0;
+    padding: 1% 0% ;
+    border-radius:  0 0 5px 5px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+}
+/*Configuracion del formulario para los comentarios*/
+.new_coment{
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+/*Configuracion del texto de la biografia*/
+.biografia{
+    margin-left: 2%;
+    width: 95%;
+}
+.text_biografia{
+    color: #ffffff;
+    font-size: 2.4em;
+    text-align: justify;
+    font-size: 220%;
+    font-family: 'Caveat', cursive;
+}
+/*Color de errores de validacion*/
+.colorError{
+    color: red;
+}
+.colorError2{
+    color: red;
+    margin-left: 1.5rem;
+}
+/*Configuracion de los modal*/
+.modal-content{
+    margin-top: 10rem;
+}
+/*Configurando imagenes del footer*/
+.imagenesContactos{
+    width: 1rem;
+}
